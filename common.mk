@@ -40,7 +40,7 @@ ifeq ($(findstring prebuilt,$(TARGET_TOOLS_PREFIX)),prebuilt)
 ifeq ($(TARGET_ARCH),arm)
 toolchain := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/android-GNU-toolchain-4.8
 ifneq ($(USE_GNU_ANDROIDEABI),true)
-toolchain := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-4.6
+toolchain := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-4.7
 endif
 common_host_c_includes := $(common_c_includes) $(toolchain)/include
 common_host_cflags := $(common_cflags) -fexceptions -DANDROID_HOST -DHAVE_XCALLOC

@@ -35,10 +35,10 @@ common_target_cflags := $(common_cflags)
 HAVE_LIBBFD := false
 
 ifeq ($(TARGET_ARCH),arm)
-toolchain := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-4.8
+toolchain := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-4.9
 common_host_extra_flags := -DANDROID_TARGET_ARM
-ifneq ($(USE_SABERMOD_ANDROIDEABI_48),true)
-  toolchain := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-4.7
+ifneq ($(USE_SABERMOD_ANDROIDEABI_49),true)
+  toolchain := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-4.8
 endif
 endif
 
